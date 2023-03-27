@@ -50,7 +50,9 @@ router.get("/", handler(async (req, res) => {
         filter.price["$lte"] = req.query.maxPrice
     }
     if (req.query.minPrice) {
-        if (!filter.price) { filter.price = {} }
+        if (!filter.price) {
+            filter.price = {}
+        }
         filter.price["$gte"] = req.query.minPrice
     }
 

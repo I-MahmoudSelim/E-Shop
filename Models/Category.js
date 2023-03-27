@@ -24,8 +24,6 @@ const categorySchema = Schema({
             let category = new this(body)
             return await category.save()
         },
-
-
     },
 
     methods: {
