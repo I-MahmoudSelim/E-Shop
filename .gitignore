@@ -1,3 +1,4 @@
 config/
 node_modules/
 Database/seeds.js
+package-lock.json
